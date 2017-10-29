@@ -1,7 +1,10 @@
 #include <stdio.h>
-int a,cont=2;
+int a;
+int solve(int n){
+        int cont=2;
+        for(int i=2;i<=a/2;++i)if(a%i==0)cont++;
+        return cont;
+}
 int main(){
-    scanf("%i", &a);
-    for(int i=2;i<=a/2;++i)if(a%i==0)cont++;
-    printf("%i", cont);
+    scanf("%i", &a),printf("%i", solve(a));
 }
