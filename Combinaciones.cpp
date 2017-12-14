@@ -1,6 +1,7 @@
 #include <stdio.h>
 long long a[101][101],n,m;
 void calc(){
+    //Genero mi triángulo de Pascal
     a[1][1]=a[1][0]=1;
 	for (int i=2;i<=100;i++) {
 		a[i][0]=1;
